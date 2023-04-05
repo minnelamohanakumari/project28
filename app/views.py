@@ -10,3 +10,7 @@ def display_webpages(request):
     LWO=Webpage.objects.all()
     d={'webpage':LWO}
     return render(request,'display_webpages.html',d)
+def display_accessrecords(request):
+    LOA=AccessRecords.objects.all()
+    d={'access':LOA}
+    return render(request,'display_accessrecords.html',d)
